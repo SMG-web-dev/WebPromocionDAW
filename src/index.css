@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.carousel {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.carousel-item {
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Estilos para el modo claro */
+.bg-gray-100 {
+  background-color: #f3f4f6;
+}
+
+.bg-gray-200 {
+  background-color: #e5e7eb;
+}
+
+/* Estilos para el modo oscuro */
+.dark .bg-gray-800 {
+  background-color: #1f2937;
+}
+
+.dark .bg-gray-900 {
+  background-color: #111827;
+}
+
+/* Ajustes generales para mejorar la legibilidad */
+.text-gray-600 {
+  color: #4b5563;
+}
+
+.dark .text-gray-300 {
+  color: #d1d5db;
+}
