@@ -13,7 +13,7 @@ const Contacto: React.FC = () => {
             <div className="flex items-center mb-4">
               <Phone className="w-6 h-6 mr-2 text-blue-700 dark:text-blue-400" />
               <span className="text-gray-700 dark:text-gray-300">
-                +34 91 314 76 50 / / 91 314 67 06
+                +34 91 314 76 50 / 91 314 67 06
               </span>
             </div>
             <div className="flex items-center mb-4">
