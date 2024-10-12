@@ -12,7 +12,7 @@ const Header: React.FC = () => {
           <img
             src="/logo.png"
             alt="Logo IES Tetuán"
-            className="w-20 h-12 mr-4"
+            className="w-16 h-12 mr-4"
           />
           <a
             href="https://www.iestetuan.es/cmsj/"
