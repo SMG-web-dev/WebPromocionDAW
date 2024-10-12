@@ -10,7 +10,7 @@ const Header: React.FC = () => {
       <div className="container mx-auto flex justify-between items-center">
         <div className="flex items-center">
           <img
-            src="/public/logo.png"
+            src="./public/logo.png"
             alt="Logo IES Tetuán"
             className="w-20 h-12 mr-4"
           />
