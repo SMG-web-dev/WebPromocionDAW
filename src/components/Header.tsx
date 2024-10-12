@@ -9,11 +9,7 @@ const Header: React.FC = () => {
     <header className="bg-blue-800 dark:bg-blue-900 text-white p-4">
       <div className="container mx-auto flex justify-between items-center">
         <div className="flex items-center">
-          <img
-            src="/public/logo.png"
-            alt="Logo IES Tetuán"
-            className="w-12 h-12 mr-4"
-          />
+          <img src="./public/logo.png" alt="Logo" className="w-12 h-12 mr-4" />
           <a
             href="https://www.iestetuan.es/cmsj/"
             target="_blank"
