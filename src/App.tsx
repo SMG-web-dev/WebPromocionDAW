@@ -4,7 +4,7 @@ import Hero from './components/Hero';
 import PlanEstudios from './components/PlanEstudios';
 import SalidasProfesionales from './components/SalidasProfesionales';
 import Proyectos from './components/Proyectos';
-import Contacto from './components/Contacto';
+import DondeEstamos from './components/DondeEstamos';
 import Footer from './components/Footer';
 import { ThemeProvider } from './contexts/ThemeContext';
 
@@ -24,7 +24,7 @@ function App() {
           <PlanEstudios />
           <SalidasProfesionales />
           <Proyectos />
-          <Contacto />
+          <DondeEstamos />
         </main>
         <Footer />
       </div>
