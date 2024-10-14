@@ -29,18 +29,18 @@ const modules = [
 
 const PlanEstudios: React.FC = () => {
   return (
-    <section id="plan-estudios" className="py-20 bg-gray-200 dark:bg-gray-800">
-      <div className="container mx-auto">
-        <h2 className="text-3xl font-bold text-center mb-10 text-blue-800 dark:text-blue-300">Plan de Estudios</h2>
+    <section id="plan-estudios" className="py-12 sm:py-16 md:py-20 bg-gray-200 dark:bg-gray-800">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 className="text-2xl sm:text-3xl font-bold text-center mb-8 sm:mb-10 text-blue-800 dark:text-blue-300">Plan de Estudios</h2>
         {modules.map((year, yearIndex) => (
-          <div key={yearIndex} className="mb-12">
-            <h3 className="text-2xl font-semibold mb-6 text-blue-700 dark:text-blue-400">{year.year}º Año</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div key={yearIndex} className="mb-8 sm:mb-12">
+            <h3 className="text-xl sm:text-2xl font-semibold mb-4 sm:mb-6 text-blue-700 dark:text-blue-400">{year.year}º Año</h3>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
               {year.subjects.map((module, index) => (
-                <div key={index} className={`p-6 rounded-lg shadow-md ${index % 2 === 0 ? 'bg-blue-100 dark:bg-blue-800' : 'bg-white dark:bg-gray-700'}`}>
-                  <h4 className="text-xl font-semibold mb-2 text-blue-800 dark:text-blue-300">{module.name}</h4>
-                  <p className="text-gray-600 dark:text-gray-300 mb-4">{module.description}</p>
-                  <p className="text-sm font-medium text-blue-700 dark:text-blue-400">{module.hours} horas</p>
+                <div key={index} className={`p-4 sm:p-6 rounded-lg shadow-md ${index % 2 === 0 ? 'bg-blue-100 dark:bg-blue-800' : 'bg-white dark:bg-gray-700'}`}>
+                  <h4 className="text-lg sm:text-xl font-semibold mb-2 text-blue-800 dark:text-blue-300">{module.name}</h4>
+                  <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300 mb-3 sm:mb-4">{module.description}</p>
+                  <p className="text-xs sm:text-sm font-medium text-blue-700 dark:text-blue-400">{module.hours} horas</p>
                 </div>
               ))}
             </div>
