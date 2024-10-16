@@ -13,8 +13,8 @@ const DondeEstamos: React.FC = () => {
         <h2 className="text-2xl sm:text-3xl font-bold text-center mb-8 sm:mb-10 text-blue-800 dark:text-blue-300">
           ¿Dónde estamos?
         </h2>
-        <div className="max-w-4xl mx-auto">
-          <div className="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-lg">
+        <div className="max-w-5xl mx-auto">
+          <div className="relative pb-[75%] h-0">
             <iframe
               src={mapSrc}
               width="100%"
@@ -22,7 +22,8 @@ const DondeEstamos: React.FC = () => {
               style={{ border: 0 }}
               allowFullScreen
               loading="lazy"
-              className="w-full h-full"
+              className="absolute top-0 left-0 w-full h-full rounded-lg shadow-lg"
+              title="Ubicación de IES Tetuán de las Victorias"
             ></iframe>
           </div>
         </div>

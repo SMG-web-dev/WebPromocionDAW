@@ -41,7 +41,21 @@ const Footer: React.FC = () => {
             </div>
           </div>
         </div>
-        <div className="mt-8 pt-8 border-t border-gray-700 text-center text-sm text-gray-400">
+        <div className="mt-8 flex flex-wrap justify-center gap-4">
+          <a href="#plan-estudios" className="text-blue-400 hover:text-blue-300 transition-colors duration-200">
+            Plan de estudios
+          </a>
+          <a href="#salidas-profesionales" className="text-blue-400 hover:text-blue-300 transition-colors duration-200">
+            Salidas profesionales
+          </a>
+          <a href="#proyectos" className="text-blue-400 hover:text-blue-300 transition-colors duration-200">
+            Proyectos
+          </a>
+          <a href="#contacto" className="text-blue-400 hover:text-blue-300 transition-colors duration-200">
+            Contacto
+          </a>
+        </div>
+        <div id="contacto" className="mt-8 pt-8 border-t border-gray-700 text-center text-sm text-gray-400">
           © {new Date().getFullYear()} IES Tetuán de las Victorias. Todos los derechos reservados.
         </div>
       </div>
