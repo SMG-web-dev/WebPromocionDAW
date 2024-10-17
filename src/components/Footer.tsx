@@ -51,9 +51,6 @@ const Footer: React.FC = () => {
           <a href="#proyectos" className="text-blue-400 hover:text-blue-300 transition-colors duration-200">
             Proyectos
           </a>
-          <a href="#contacto" className="text-blue-400 hover:text-blue-300 transition-colors duration-200">
-            Contacto
-          </a>
         </div>
         <div id="contacto" className="mt-8 pt-8 border-t border-gray-700 text-center text-sm text-gray-400">
           © {new Date().getFullYear()} IES Tetuán de las Victorias. Todos los derechos reservados.
