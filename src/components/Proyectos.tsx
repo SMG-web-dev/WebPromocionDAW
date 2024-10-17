@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect } from "react"; import { motion } from 'framer-motion';
 
 const projects = [
   {
@@ -53,16 +53,36 @@ const Proyectos: React.FC = () => {
   }, []);
 
   return (
-    <section id="proyectos" className="py-20 bg-gray-200 dark:bg-gray-800">
+    <section id="proyectos" className="py-20 bg-gray-200 dark:bg-gray-800 overflow-hidden">
       <div className="container mx-auto">
-        <h2 className="text-3xl font-bold text-center mb-10 text-blue-800 dark:text-blue-300">
+        <motion.h2
+          className="text-3xl font-bold text-center mb-10 text-blue-800 dark:text-blue-300"
+          initial={{ opacity: 0, y: -50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+        >
           Proyectos de Estudiantes
-        </h2>
-        <div className="relative overflow-hidden">
+        </motion.h2>
+        <motion.div
+          className="relative overflow-hidden"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+        >
           <div ref={carouselRef} className="flex space-x-4 overflow-x-hidden">
-            {projects.map((project) => (
-              <div key={project.id} className="flex-none w-64 md:w-80">
-                <div className="bg-white dark:bg-gray-700 rounded-lg shadow-md overflow-hidden">
+            {projects.map((project, index) => (
+              <motion.div
+                key={project.id}
+                className="flex-none w-64 md:w-80"
+                initial={{ opacity: 0, x: 100 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+              >
+                <motion.div
+                  className="bg-white dark:bg-gray-700 rounded-lg shadow-md overflow-hidden"
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                >
                   <img
                     src={project.image}
                     alt={project.title}
@@ -73,11 +93,11 @@ const Proyectos: React.FC = () => {
                       {project.title}
                     </h3>
                   </div>
-                </div>
-              </div>
+                </motion.div>
+              </motion.div>
             ))}
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

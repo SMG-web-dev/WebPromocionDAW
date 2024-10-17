@@ -1,5 +1,6 @@
 import React from "react";
 import { useTheme } from "../contexts/ThemeContext";
+import { motion } from 'framer-motion';
 
 const DondeEstamos: React.FC = () => {
   const { darkMode } = useTheme();
@@ -8,14 +9,26 @@ const DondeEstamos: React.FC = () => {
     }`;
 
   return (
-    <section id="donde-estamos" className="py-12 sm:py-16 md:py-20 bg-gray-100 dark:bg-gray-900">
+    <section id="donde-estamos" className="py-12 sm:py-16 md:py-20 bg-gray-100 dark:bg-gray-900 overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-2xl sm:text-3xl font-bold text-center mb-8 sm:mb-10 text-blue-800 dark:text-blue-300">
+        <motion.h2
+          className="text-2xl sm:text-3xl font-bold text-center mb-8 sm:mb-10 text-blue-800 dark:text-blue-300"
+          initial={{ opacity: 0, y: -50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
+        >
           ¿Dónde estamos?
-        </h2>
-        <div className="max-w-5xl mx-auto">
+        </motion.h2>
+        <motion.div
+          className="max-w-5xl  mx-auto"
+          initial={{ opacity: 0, scale: 0.8 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          viewport={{ once: true }}
+        >
           <div className="relative pb-[75%] h-0">
-            <iframe
+            <motion.iframe
               src={mapSrc}
               width="100%"
               height="100%"
@@ -24,9 +37,13 @@ const DondeEstamos: React.FC = () => {
               loading="lazy"
               className="absolute top-0 left-0 w-full h-full rounded-lg shadow-lg"
               title="Ubicación de IES Tetuán de las Victorias"
-            ></iframe>
+              initial={{ filter: "blur(10px)" }}
+              whileInView={{ filter: "blur(0px)" }}
+              transition={{ duration: 1 }}
+              viewport={{ once: true }}
+            ></motion.iframe>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
