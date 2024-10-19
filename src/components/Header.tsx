@@ -37,7 +37,7 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className={`bg-gray-800 text-white overflow-hidden`}>
+    <header id="inicio" className={`bg-gray-800 text-white overflow-hidden`}>
       <div className="container mx-auto px-4 relative">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
@@ -57,7 +57,7 @@ const Header: React.FC = () => {
               initial="hidden"
               animate="visible"
             >
-              {Array.from("IES Tetuán").map((letter, index) => (
+              {Array.from("IES Tetuán De Las Victorias").map((letter, index) => (
                 <motion.span key={index} variants={letterVariants}>
                   {letter}
                 </motion.span>

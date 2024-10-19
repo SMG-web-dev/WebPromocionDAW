@@ -19,7 +19,7 @@ const Footer: React.FC = () => {
                 rel="noopener noreferrer"
                 className="text-lg sm:text-xl font-bold"
               >
-                IES Tetuán
+                IES Tetuán De Las Victorias
               </a>
             </div>
             <p className="text-gray-400">Formando profesionales desde 1975</p>
@@ -42,6 +42,9 @@ const Footer: React.FC = () => {
           </div>
         </div>
         <div className="mt-8 flex flex-wrap justify-center gap-4">
+          <a href="#inicio" className="text-blue-400 hover:text-blue-300 transition-colors duration-200">
+            Inicio
+          </a>
           <a href="#plan-estudios" className="text-blue-400 hover:text-blue-300 transition-colors duration-200">
             Plan de estudios
           </a>
