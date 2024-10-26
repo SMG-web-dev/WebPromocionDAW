@@ -96,10 +96,10 @@ export default function Component() {
   };
 
   return (
-    <section className="py-12 bg-gradient-to-b from-gray-100 to-gray-200 dark:from-gray-800 dark:to-gray-900">
+    <section className="py-8 sm:py-12 bg-gradient-to-b from-gray-100 to-gray-200 dark:from-gray-800 dark:to-gray-900">
       <div className="container mx-auto px-4 relative max-w-4xl">
         <motion.h2
-          className="text-3xl md:text-4xl font-bold text-center mb-8 text-blue-600 dark:text-blue-300"
+          className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-6 sm:mb-8 text-blue-600 dark:text-blue-300"
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
@@ -108,26 +108,6 @@ export default function Component() {
         </motion.h2>
 
         <div className="relative">
-          <button
-            className="absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-12 bg-white dark:bg-gray-800 p-2 rounded-full shadow-lg z-10"
-            onClick={prevProject}
-          >
-            <svg
-              className="w-6 h-6 text-blue-600 dark:text-blue-300"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M15 19l-7-7 7-7"
-              />
-            </svg>
-          </button>
-
           <motion.div
             className="relative overflow-hidden rounded-xl shadow-2xl"
             initial={{ opacity: 0 }}
@@ -136,12 +116,7 @@ export default function Component() {
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
           >
-            <div
-              className="relative w-full"
-              style={{ paddingBottom: "56.25%" }}
-            >
-              {" "}
-              {/* Aspect ratio 16:9 */}
+            <div className="relative w-full" style={{ paddingBottom: "75%" }}>
               <AnimatePresence initial={false} custom={direction}>
                 <motion.div
                   key={currentIndex}
@@ -157,18 +132,18 @@ export default function Component() {
                   className="absolute inset-0"
                 >
                   <div className="bg-white dark:bg-gray-800 h-full flex flex-col">
-                    <div className="relative h-3/5">
+                    <div className="relative h-1/2 sm:h-3/5">
                       <img
                         src={projects[currentIndex].image}
                         alt={projects[currentIndex].title}
                         className="w-full h-full object-contain"
                       />
                     </div>
-                    <div className="h-2/5 p-4 flex flex-col justify-center">
-                      <h3 className="text-xl md:text-2xl font-semibold text-blue-600 dark:text-blue-300 mb-2">
+                    <div className="h-1/2 sm:h-2/5 p-3 sm:p-4 flex flex-col justify-center">
+                      <h3 className="text-base sm:text-sm md:text-xl font-semibold text-blue-600 dark:text-blue-300 mb-1 sm:mb-2">
                         {projects[currentIndex].title}
                       </h3>
-                      <p className="text-gray-600 dark:text-gray-300 text-sm md:text-base line-clamp-3">
+                      <p className="text-xs sm:text-sm md:text-base text-gray-600 dark:text-gray-300 line-clamp-3 sm:line-clamp-4">
                         {projects[currentIndex].description}
                       </p>
                     </div>
@@ -176,30 +151,50 @@ export default function Component() {
                 </motion.div>
               </AnimatePresence>
             </div>
-          </motion.div>
 
-          <button
-            className="absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-12 bg-white dark:bg-gray-800 p-2 rounded-full shadow-lg z-10"
-            onClick={nextProject}
-          >
-            <svg
-              className="w-6 h-6 text-blue-600 dark:text-blue-300"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
+            <button
+              className="absolute left-2 top-2 bg-white dark:bg-gray-800 p-1 sm:p-2 rounded-full shadow-lg z-10"
+              onClick={prevProject}
             >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M9 5l7 7-7 7"
-              />
-            </svg>
-          </button>
+              <svg
+                className="w-4 h-4 sm:w-5 sm:h-5 text-blue-600 dark:text-blue-300"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M15 19l-7-7 7-7"
+                />
+              </svg>
+            </button>
+
+            <button
+              className="absolute right-2 top-2 bg-white dark:bg-gray-800 p-1 sm:p-2 rounded-full shadow-lg z-10"
+              onClick={nextProject}
+            >
+              <svg
+                className="w-4 h-4 sm:w-5 sm:h-5 text-blue-600 dark:text-blue-300"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </button>
+          </motion.div>
         </div>
 
-        <div className="mt-6 flex justify-center">
+        <div className="mt-4 sm:mt-6 flex justify-center">
           {projects.map((_, index) => (
             <button
               key={index}
