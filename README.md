@@ -1,6 +1,6 @@
 # WebPromocionDAW 🚀
 
-**WebPromocionDAW** es una aplicación frontend construida con **React**, **Vite**, y **TailwindCSS**. Esta aplicación está diseñada para ofrecer una interfaz interactiva, eficiente y de alto rendimiento, utilizando tecnologías modernas como React para la construcción de la UI, Vite para un desarrollo rápido y TailwindCSS para una personalización de diseño responsiva.
+**WebPromocionDAW** es una aplicación frontend construida con **React**, **Vite**, y **TailwindCSS**. Esta aplicación está diseñada para ofrecer una interfaz interactiva, eficiente y de alto rendimiento, utilizando tecnologías modernas como React para la construcción de la UI, Vite para un desarrollo rápido y TailwindCSS para una personalización de diseño responsiva. Desplegada en Netlify a todo el público : `https://ies-tetuan-daw.netlify.app/`
 
 ## 🚀 Características
 - **Interfaz Reactiva**: Utiliza React para gestionar la interfaz de usuario de manera eficiente.
@@ -36,7 +36,7 @@ Para ejecutar el proyecto localmente, sigue estos pasos:
     ```
 
 ## 📖 Uso
-Una vez que la aplicación esté en ejecución, abre tu navegador y visita `http://localhost:3000` para ver la aplicación en acción.
+Una vez que la aplicación esté en ejecución, abre tu navegador y visita `http://localhost:5173` para ver la aplicación en acción.
 
 ## 📝 Licencia
 Este proyecto está licenciado bajo la licencia MIT. Consulta el archivo `LICENSE` para más detalles.
