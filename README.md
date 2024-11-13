@@ -2,12 +2,15 @@
 
 **WebPromocionDAW** es una aplicación frontend construida con **React**, **Vite**, y **TailwindCSS**. Esta aplicación está diseñada para ofrecer una interfaz interactiva, eficiente y de alto rendimiento, utilizando tecnologías modernas como React para la construcción de la UI, Vite para un desarrollo rápido y TailwindCSS para una personalización de diseño responsiva. 
 
+Además, la aplicación utiliza un **ThemeContext** para gestionar el tema (oscuro/claro) de manera global, permitiendo a los usuarios alternar entre ambos temas sin recargar la página.
+
 ## 🚀 Características
 - **Interfaz Reactiva**: Utiliza React para gestionar la interfaz de usuario de manera eficiente.
 - **Desarrollo Rápido con Vite**: Optimizado para un inicio rápido y una experiencia de desarrollo ágil.
 - **Estilos Personalizados con TailwindCSS**: Diseño flexible y moderno.
 - **Interactividad**: Animaciones fluidas con **Framer Motion**.
-  
+- **Gestión de Tema Global**: Cambio dinámico entre modos claro y oscuro mediante **ThemeContext**.
+
 ## 🛠️ Tecnologías
 - **React**: Framework de JavaScript para construir interfaces interactivas mediante componentes reutilizables y gestión eficiente del estado.
 - **Vite**: Herramienta de construcción rápida que optimiza el rendimiento.
