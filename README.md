@@ -9,9 +9,9 @@
 - **Interactividad**: Animaciones fluidas con **Framer Motion**.
   
 ## 🛠️ Tecnologías
-- **React**: Librería de JavaScript para construir interfaces de usuario.
+- **React**: Framework de JavaScript para construir interfaces interactivas mediante componentes reutilizables y gestión eficiente del estado.
 - **Vite**: Herramienta de construcción rápida que optimiza el rendimiento.
-- **TailwindCSS**: Framework de CSS utilitario para una estilización rápida y flexible.
+- **TailwindCSS**: Framework de CSS para una estilización rápida y flexible.
 - **Framer Motion**: Librería para animaciones.
 - **TypeScript**: Superset de JavaScript para un desarrollo más robusto.
 
