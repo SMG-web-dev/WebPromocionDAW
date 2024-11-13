@@ -1,4 +1,4 @@
-# WebPromocionDAW 🚀
+# WebPromocionDAW 💻
 
 **WebPromocionDAW** es una aplicación frontend construida con **React**, **Vite**, y **TailwindCSS**. Esta aplicación está diseñada para ofrecer una interfaz interactiva, eficiente y de alto rendimiento, utilizando tecnologías modernas como React para la construcción de la UI, Vite para un desarrollo rápido y TailwindCSS para una personalización de diseño responsiva. 
 
